@@ -24,42 +24,71 @@ Many elements are available only for students who receive federal grants and loa
 I used the College Scorecard data released by the Department of Education for my analysis. The full data set has information on more than 7,000 institutions in the United States, including community colleges, undergraduate schools, and post-graduate institutions like law and medical schools. It also contains about 2,000 variables. This project includes the following from Academic Year 2017-2018 Data:
 
 'UNITID', unique identification number assigned to postsecondary institutions 
+
 'INSTNM', institution’s name
+
 'CITY', 
+
 'STABBR', state name
+
 'NUMBRANCH', the number of branch campuses at that institution
+
 'MAIN', Main Campus/Branch 
+
 'HIGHDEG', # identifies the highest award level conferred at the institution
+
 'PREDDEG', type of award that the institution primarily confers9
+
 'CONTROL', institution’s governance structure is public, private nonprofit, or private for-profit.
+
 'DISTANCEONLY', 
- 'TUITIONFEE_IN',  # Average Cost of Attendance, Tuition and Fees 
- 'TUITIONFEE_OUT', 'TUITIONFEE_PROG', 'TUITFTE',
- 'AVGFACSAL', #The average faculty salary 
+
+'TUITIONFEE_IN',  # Average Cost of Attendance, Tuition and Fees 
+ 
+'TUITIONFEE_OUT', 'TUITIONFEE_PROG', 'TUITFTE',
+ 
+'AVGFACSAL', #The average faculty salary 
+ 
 'RELAFFIL', #  identified by their religious affiliation
+
 'ADM_RATE_ALL', 
+
 'SATVR25', 'SATVR75', 'SATMT25', 'SATMT75','SATVRMID', 'SATMTMID',
 'SAT_AVG_ALL', 
 'ACTCM25', 'ACTCM75', 
 'ACTCMMID', 'ACTENMID', 'ACTMTMID', 
+
+the percentage of degrees awarded in each two-digit CIP code category of academic areas. 
+
 'PCIP01', 'PCIP03','PCIP04','PCIP05','PCIP09','PCIP10','PCIP11',
-'PCIP12', 'PCIP13','PCIP14','PCIP15','PCIP16','PCIP19', #  the percentage of degrees awarded in each two-digit CIP code category of academic areas. 
-                  'PCIP22','PCIP23','PCIP24','PCIP25','PCIP26','PCIP27','PCIP29', # the percentage of degrees awarded in each two-digit CIP code category of academic areas. 
-                    'PCIP30','PCIP31','PCIP38','PCIP39','PCIP40','PCIP41','PCIP42',
-                    'PCIP43','PCIP44','PCIP45','PCIP46','PCIP47','PCIP48','PCIP49',
+'PCIP12', 'PCIP13','PCIP14','PCIP15','PCIP16','PCIP19',  'PCIP22','PCIP23','PCIP24','PCIP25','PCIP26','PCIP27','PCIP29',
+'PCIP30','PCIP31','PCIP38','PCIP39','PCIP40','PCIP41','PCIP42', 'PCIP43','PCIP44','PCIP45','PCIP46','PCIP47','PCIP48','PCIP49',
 'PCIP50','PCIP51','PCIP52','PCIP54',
+
 'UGDS', # number of degree/certificate-seeking undergraduates enrolled 
+
 'UGDS_WHITE','UGDS_BLACK','UGDS_HISP','UGDS_ASIAN', #Undergraduate Student Body by Race and Gender
+
 'UGDS_AIAN','UGDS_NHPI','UGDS_2MOR','UGDS_NRA','UGDS_UNKN',  #Number of Undergraduate Students 
+
 'UG25ABV', # Undergraduate Student Body by Age who are ages 25 and over
+
 'PPTUG_EF', # Undergraduate Students by Part-Time/Full-Time Status 
+
 'COSTT4_A','COSTT4_P', # Average Cost of Attendance, Tuition and Fees 
-'INEXPFTE', #Instructional expenditures per FTE student                
+
+'INEXPFTE', #Instructional expenditures per FTE student      
+
 'C150_4', #Completion Rates for 4 year college
+
 'RET_FT4','RET_FTL4', #Retention Rate - return to the institution after the first year
+
 'PCTFLOAN', # Percent of Undergraduates Receiving Federal Loans 
+
 'OPENADMP', # OPENADMP
+
 'DEBT_MDN', #  the sum of all undergraduate federal loans over students’ college education at the institution
+
 'CDR3', #  repayment Cohort Default Rate, The three-year cohort default rate 
 
 Median Earnings:  Median earnings for all federally aided students. Data is available for each year starting six years after a student enrolls in college and up to 10 years after the student enrolls. for this analysis, I used 10-year earnings data in Academic Year 2014-2015 Data because that is the latest data file contains earing data.
@@ -72,7 +101,7 @@ First, User input a SAT score, this Recommender will output colleges to user in 
 
 REACH: Test Score Meets 25th percentile of applicants admitted
 
-TARGET: Test Score Above median but less than 75 percentile of applicants admitted 
+TARGET: Test Score About median but less than 75 percentile of applicants admitted 
 
 SAFETY COLLEGES: Test Score Higher than 75 percentile of applicants admitted
 
